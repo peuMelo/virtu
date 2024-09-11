@@ -60,12 +60,6 @@ main {
 
 section {
   width: 100%;
-  /*Mudanças*/
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  background-size: cover;
 }
 
 span.montserratOpty500 {
@@ -323,6 +317,16 @@ footer div.naveg a:hover {
 }
 
 @media (max-width: 768px) {
+  .img1 {
+    background-image: url('../imagens/inicio_sm.png');
+  }
+  .img3 {
+    background-image: url('../imagens/escritorio_sm.png');
+  }
+  .img4 {
+    background-image: url('../imagens/vista_piscina_sm.png');
+  }
+
   .carrossel-lg {
   display: none;
   }
@@ -548,24 +552,10 @@ footer div.naveg a:hover {
   }
 }
 
+@supports (-webkit-overflow-scrolling: touch) {
 
-/*Mudanças teste*/
-@media (max-width: 768px) {
-  .img1 {
-    background-image: url('../imagens/inicio_sm.png');
+  .img1, .img2, .img3, .img4 {
+    background-attachment: fixed;
   }
-  .img3 {
-    background-image: url('../imagens/escritorio_sm.png');
-  }
-  .img4 {
-    background-image: url('../imagens/vista_piscina_sm.png');
-  }
-}
 
-@media screen and (max-width: 415px) {
-  .img1, .img3, .img4 {
-    background-size: cover !important;
-    -webkit-background-size: cover !important; /* Garantir que o Safari respeite o enquadramento */
-    background-attachment: fixed; /* Parallax ativo */
-  }
 }
