@@ -1,3 +1,15 @@
+window.addEventListener('load', () => {
+  
+  window.scrollTo(0, 0);
+
+  
+  window.addEventListener('hashchange', () => {
+    if (!location.hash) {
+      window.scrollTo(0, 0);
+    }
+  });
+});
+
 document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelectorAll('a[href^="#"]');
 
@@ -6,18 +18,18 @@ document.addEventListener('DOMContentLoaded', () => {
       event.preventDefault();
       const target = document.querySelector(link.getAttribute('href'));
 
-      window.scrollTo({
-        top: target.offsetTop,
-        behavior: 'smooth'
-      });
+      
+      if (target) {
+        window.scrollTo({
+          top: target.offsetTop,
+          behavior: 'smooth'
+        });
 
-      history.pushState(null, null, window.location.pathname);
+       
+        if (history.replaceState) {
+          history.replaceState(null, null, window.location.pathname);
+        }
+      }
     });
   });
-});
-
-window.addEventListener('load', () => {
-  setTimeout(() => {
-    window.scrollTo(0, 0);
-  }, 100);
 });
