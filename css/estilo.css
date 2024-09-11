@@ -551,28 +551,23 @@ footer div.naveg a:hover {
 @media (max-width: 768px) {
   .img1 {
     background-image: url('../imagens/inicio_sm.png');
-    background-size: contain;
   }
   .img3 {
     background-image: url('../imagens/escritorio_sm.png');
-    background-size: contain;
   }
   .img4 {
     background-image: url('../imagens/vista_piscina_sm.png');
-    background-size: contain;
   }
 }
 
 
 @media screen and (max-width: 415px) {
   .img1, .img3, .img4 {
-    background-size: contain;
   }
 }
 
 
 @media (min-width: 769px) {
   .img1, .img3, .img4 {
-    background-size: cover;
   }
 }
