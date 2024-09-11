@@ -555,7 +555,7 @@ footer div.naveg a:hover {
 @media (max-width: 430px) {
 
   .img1, .img2, .img3, .img4 {
-    background-attachment: fixed;
+    background-attachment: scroll;
   }
 
 }
