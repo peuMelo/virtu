@@ -26,18 +26,32 @@ html, body {
   height: 100vh;
   margin: 0;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body {
   font-family: "Montserrat Variable", sans-serif;
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main {
@@ -54,6 +68,8 @@ span.montserratOpty500 {
   font-size: 3em;
   color: white;
   opacity: 0.8;
+  -webkit-transition: opacity 1s, font-size 1s ease-out;
+  -o-transition: opacity 1s, font-size 1s ease-out;
   transition: opacity 1s, font-size 1s ease-out;
 }
 
@@ -76,6 +92,8 @@ header {
   border-bottom: 1px solid rgba(187, 185, 185, 0.1);
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.2);
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
   transition: background-color 0.5s ease-in-out;
   width: 100%;
 }
@@ -89,6 +107,8 @@ a.nav-link {
   color: white;
   font-family: 'Montserrat Variable', sans-serif;
   font-weight: 500;
+  -webkit-transition:color 0.5s ease-out, font-weight 0.5s ease-out, font-size 0.5s ease-out;
+  -o-transition:color 0.5s ease-out, font-weight 0.5s ease-out, font-size 0.5s ease-out;
   transition:color 0.5s ease-out, font-weight 0.5s ease-out, font-size 0.5s ease-out;
 }
 
@@ -100,18 +120,29 @@ a.nav-link::after {
   width: 100%;
   height: 2px;
   background-color: gray;
-  transform: scaleX(0);
-  transform-origin: left;
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform 2s ease;
+  transition: -webkit-transform 2s ease;
+  -o-transition: transform 2s ease;
   transition: transform 2s ease;
+  transition: transform 2s ease, -webkit-transform 2s ease;
 }
 
 a.nav-link:hover::after {
-  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 a.nav-link:hover {
   text-underline-offset: 5px;
-  text-decoration-color: gray !important;
+  -webkit-text-decoration-color: gray !important;
+          text-decoration-color: gray !important;
   color: white;
   font-weight: 800;
   font-size: medium;
@@ -138,6 +169,8 @@ a.nav-link:active {
   background-position: center;
   background-attachment: fixed;
   opacity: 0.7;
+  -webkit-transition: opacity 1.5s ease-in-out;
+  -o-transition: opacity 1.5s ease-in-out;
   transition: opacity 1.5s ease-in-out;
 }
 
@@ -179,6 +212,8 @@ a.nav-link:active {
 #logo img {
   width: auto;
   height: 15em;
+  -webkit-transition: opacity 1s, height 1s ease-out;
+  -o-transition: opacity 1s, height 1s ease-out;
   transition: opacity 1s, height 1s ease-out;
   opacity: 0.8;
 }
@@ -193,14 +228,20 @@ a.nav-link:active {
   border: 3px solid var(--cinzaV);
   width: 7em;
   height: auto;
-  box-shadow: 0px 0px 90px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 90px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 90px rgba(0, 0, 0, 0.3);
+  -webkit-transition: width 0.5s ease-out, -webkit-box-shadow 0.5s ease-out;
+  transition: width 0.5s ease-out, -webkit-box-shadow 0.5s ease-out;
+  -o-transition: width 0.5s ease-out, box-shadow 0.5s ease-out;
   transition: width 0.5s ease-out, box-shadow 0.5s ease-out;
+  transition: width 0.5s ease-out, box-shadow 0.5s ease-out, -webkit-box-shadow 0.5s ease-out;
 }
 
 .perfil:hover {
   width: 7.5em;
   height: auto;
-  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
 }
 
 .labelFt {
@@ -224,6 +265,8 @@ a.nav-link:active {
 
 div.card a {
   opacity: 0.7;
+  -webkit-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
 }
 
@@ -342,6 +385,8 @@ footer div.naveg a:hover {
   #logo img {
     width: auto;
     height: 20em;
+    -webkit-transition: height 1s ease-out;
+    -o-transition: height 1s ease-out;
     transition: height 1s ease-out;
 
   }/**/
@@ -410,6 +455,8 @@ footer div.naveg a:hover {
   #logo img {
     width: auto;
     height: 27em;
+    -webkit-transition: height 1s ease-out;
+    -o-transition: height 1s ease-out;
     transition: height 1s ease-out;
 
   }
@@ -474,6 +521,8 @@ footer div.naveg a:hover {
   #logo img {
     width: auto;
     height: 30em;
+    -webkit-transition: height 1s ease-out;
+    -o-transition: height 1s ease-out;
     transition: height 1s ease-out;
 
   }
