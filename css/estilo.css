@@ -1,6 +1,6 @@
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -126,17 +126,17 @@ a.nav-link:active {
 }
 
 .conteudo {
-	background-color: #F5F5F7;
-	padding: 50px 0;
-	color: #777;
+  background-color: #F5F5F7;
+  padding: 50px 0;
+  color: #777;
 }
 
 .img1, .img2, .img3, .img4 {
-	height: 100vh;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   opacity: 0.7;
   transition: opacity 1.5s ease-in-out;
 }
@@ -149,15 +149,15 @@ a.nav-link:active {
 }
 
 .img1 {
-	background-image: url(../imagens/inicio.png); 
+  background-image: url(../imagens/inicio.png); 
 }
 
 .img2 {
-	background-image: url(../imagens/quemsomos1.png);
+  background-image: url(../imagens/quemsomos_lg.png);
 }
 
 .img3 {
-	background-image: url(../imagens/escritorio.png);
+  background-image: url(../imagens/escritorio.png);
 }
 
 .img4 {
@@ -281,6 +281,16 @@ footer div.naveg a:hover {
     display: block;
   }
 
+  .img2 {
+    background-image: url(../imagens/quemsomos_sm.png);
+  }
+
+}
+
+@media (max-width: 415px) {
+  .img2 {
+    background-image: url(../imagens/quemsomos_xsm.png) !important;
+  }
 }
 
 @media (max-width: 576px) {
@@ -294,6 +304,10 @@ footer div.naveg a:hover {
 
   footer div.naveg{
     display: none !important;
+  }
+
+  .img2 {
+    background-image: url(../imagens/quemsomos_sm.png);
   }
  
 }
