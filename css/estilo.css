@@ -60,6 +60,11 @@ main {
 
 section {
   width: 100%;
+  /*Mudanças*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 span.montserratOpty500 {
@@ -538,5 +543,36 @@ footer div.naveg a:hover {
   footer iframe {
     width: 800px;
     height: 650px;
+  }
+}
+
+
+/*Mudanças teste*/
+@media (max-width: 768px) {
+  .img1 {
+    background-image: url('../imagens/inicio_pequeno.png'); /* Imagem ajustada para mobile */
+    background-size: contain;
+  }
+  .img3 {
+    background-image: url('../imagens/escritorio_pequeno.png');
+    background-size: contain;
+  }
+  .img4 {
+    background-image: url('../imagens/vista_piscina_pequeno.png');
+    background-size: contain;
+  }
+}
+
+
+@media screen and (max-width: 415px) {
+  .img1, .img3, .img4 {
+    background-size: contain; /* Impedir o zoom excessivo */
+  }
+}
+
+
+@media (min-width: 769px) {
+  .img1, .img3, .img4 {
+    background-size: cover;
   }
 }
