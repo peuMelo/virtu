@@ -35,14 +35,21 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+/* Visualizador***********************************************************/
 
-
-
+function preCarregarImagens(miniaturas) {
+  miniaturas.forEach(miniatura => {
+    const img = new Image();
+    img.src = miniatura.getAttribute('data-src');
+  });
+}
 
 
 
 function criaVisualizador() {
   let miniaturas = document.querySelectorAll('.abreVisualizador');
+  preCarregarImagens(miniaturas); 
+
   let body = document.querySelector('body');
 
   //Percorre toda a NodeList das miniaturas:
@@ -130,3 +137,5 @@ function criaVisualizador() {
 }
 
 criaVisualizador();
+
+/* *************************************************************************/
