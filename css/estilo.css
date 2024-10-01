@@ -559,3 +559,71 @@ footer div.naveg a:hover {
   }
 
 }
+
+
+
+
+
+
+
+.visualizador {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+
+.visualizador img {
+  max-width: 90%; 
+  max-height: 90%;
+  border-radius: 5px;
+}
+
+.visualizador .botaoX {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  color: rgba(138, 137, 137, 0.678);
+  font-size: 24px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.visualizador .botaoX:hover {
+  color: rgba(99, 98, 98, 0.678);
+}
+
+.visualizador .anterior {
+  position: absolute;
+  left: 30px;
+  cursor: pointer;
+  border: none;
+  color: rgba(138, 137, 137, 0.678);
+  font-size: 54px;
+  background: none;
+}
+
+.visualizador .proximo {
+  position: absolute;
+  right: 30px;
+  cursor: pointer;
+  border: none;
+  color: rgba(138, 137, 137, 0.678);
+  font-size: 54px;
+  background: none;
+}
+
+.visualizador .anterior:hover {
+  color: rgba(99, 98, 98, 0.678);
+}
+
+.visualizador .proximo:hover {
+  color: rgba(99, 98, 98, 0.678);
+}

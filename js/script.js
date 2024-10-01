@@ -33,3 +33,94 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
+
+
+
+
+
+
+function criaVisualizador() {
+  let miniaturas = document.querySelectorAll('.abreVisualizador');
+  let body = document.querySelector('body');
+
+  //Percorre toda a NodeList das miniaturas:
+  miniaturas.forEach(miniatura => {
+    
+    miniatura.addEventListener('click', () => {
+      //cria a div do visualizador:
+     const visualizador = document.createElement('div');
+     visualizador.classList.add('visualizador');
+  
+     //Cria a imagem.
+     const imagem = document.createElement('img');
+     let dataIndex = Number(miniatura.getAttribute('data-index'));
+     imagem.src = miniaturas[dataIndex].getAttribute('data-src');
+     
+     //Adiciona a imagem ao visualizador:
+     visualizador.appendChild(imagem);
+  
+     //cria o botão "x" para fechar o visualizador:
+     const botaoX = document.createElement('span');
+     botaoX.classList.add('botaoX');
+     botaoX.textContent = "X";
+     //Adiciona a função do "botão X":
+     botaoX.addEventListener('click', () => {
+      visualizador.remove();
+     });
+
+     //Adiciona o "botaoX" ao visualizador:
+     visualizador.appendChild(botaoX);
+   
+          /* Navegação ***************************************/
+
+     //função para muadar a imagem:
+     function mudaImagem() {
+      imagem.src = miniaturas[dataIndex].getAttribute('data-src');
+     }
+
+     
+     //Cria botão de anterior:
+     const anterior = document.createElement('button');
+     anterior.textContent = '<';
+     anterior.classList.add('anterior');
+     anterior.addEventListener('click', () => {
+      if (dataIndex > 0) {
+        dataIndex--;
+        mudaImagem();
+      } else if ( dataIndex === 0) {
+        dataIndex = miniaturas.length - 1;
+        mudaImagem();
+      }
+      
+     });
+
+     visualizador.appendChild(anterior);
+
+     //Cria botão de próximo:
+     const proximo = document.createElement('button');
+     proximo.textContent = '>';
+     proximo.classList.add('proximo');
+     proximo.addEventListener('click', () => {
+      if (dataIndex < miniaturas.length - 1) {
+        dataIndex++;
+        mudaImagem();
+      } else if ( dataIndex === miniaturas.length - 1) {
+        dataIndex = 0;
+        mudaImagem();
+      }
+      
+     });
+
+     visualizador.appendChild(proximo);
+
+     /* *************************************************/
+   
+     //adiciona o visualizador ao body:
+     body.appendChild(visualizador);
+    });
+  });
+}
+
+criaVisualizador();
