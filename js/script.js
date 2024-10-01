@@ -64,6 +64,10 @@ function criaVisualizador() {
      const imagem = document.createElement('img');
      let dataIndex = Number(miniatura.getAttribute('data-index'));
      imagem.src = miniaturas[dataIndex].getAttribute('data-src');
+
+     if (/Mobi|Android/i.test(navigator.userAgent)) {
+      imagem.classList.remove('fade-out');
+    }
      
      //Adiciona a imagem ao visualizador:
      visualizador.appendChild(imagem);
