@@ -8,16 +8,22 @@
 		<!---->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta http-equiv="Content-Security-Policy" content="
-		  default-src 'self';
-		  script-src 'self' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com;
-		  style-src 'self' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com 'unsafe-inline';
-		  font-src 'self' https://cdnjs.cloudflare.com;
-		  img-src 'self' data:;
-		  frame-src 'self' https://www.google.com https://maps.googleapis.com;
-		  connect-src 'self' https://maps.googleapis.com;
+		default-src 'self';
+		script-src 'self' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com 'unsafe-inline';
+		style-src 'self' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com 'unsafe-inline';
+		font-src 'self' https://cdnjs.cloudflare.com;
+		img-src 'self' data:;
+		frame-src 'self' https://www.google.com https://maps.googleapis.com;
+		connect-src 'self' https://maps.googleapis.com;
+		worker-src 'self' blob:;
+		object-src 'none';
 		">
 
 
+
+			<link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet">
+			<script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
+		  
 
 		<link rel="stylesheet" type="text/css" href="css/estilo.css">
 
@@ -180,41 +186,23 @@
 										<div class="row">
 											<div class="col-md-4">
 												<div class="card">
-													<a href="">	
-													<img src="imagens/vista_piscina.png" class="card-img-top" alt="">
+													<a href="imagens/galeria/img1.png" data-lightbox="portfolio">	
+													<img src="imagens/galeria/miniaturas/min_img1.png" class="card-img-top" alt="">
 													</a>
-													<div class="card-body">
-														<h5 class="card-title">Teste</h5>
-														<p class="card-text">
-															Lorem ipsum sit amet
-														</p>
-													</div>
 												</div>
 											</div>
 											<div class="col-md-4">
 												<div class="card">
-													<a href="">	
-													<img src="imagens/vista_piscina.png" class="card-img-top" alt="">
+													<a href="imagens/galeria/img2.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img2.png" class="card-img-top" alt="">
 													</a>
-													<div class="card-body">
-														<h5 class="card-title">Teste</h5>
-														<p class="card-text">
-															Lorem ipsum sit amet
-														</p>
-													</div>
 												</div>
 											</div>
 											<div class="col-md-4">
 												<div class="card">
-													<a href="">	
-													<img src="imagens/vista_piscina.png" class="card-img-top" alt="">
+													<a href="imagens/galeria/img3.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img3.png" class="card-img-top" alt="">
 													</a>
-													<div class="card-body">
-														<h5 class="card-title">Teste</h5>
-														<p class="card-text">
-															Lorem ipsum sit amet
-														</p>
-													</div>
 												</div>
 											</div>
 										</div>
@@ -223,43 +211,150 @@
 										<div class="row">
 											<div class="col-md-4">
 												<div class="card">
-													<a href="">	
-													<img src="imagens/vista_piscina.png" class="card-img-top" alt="">
+													<a href="imagens/galeria/img4.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img4.png" class="card-img-top" alt="">
 													</a>
-													<div class="card-body">
-														<h5 class="card-title">Teste</h5>
-														<p class="card-text">
-															Lorem ipsum sit amet
-														</p>
-													</div>
 												</div>
 											</div>
 											<div class="col-md-4">
 												<div class="card">
-													<a href="">	
-													<img src="imagens/vista_piscina.png" class="card-img-top" alt="">
+													<a href="imagens/galeria/img5.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img5.png" class="card-img-top" alt="">
 													</a>
-													<div class="card-body">
-														<h5 class="card-title">Teste</h5>
-														<p class="card-text">
-															Lorem ipsum sit amet
-														</p>
-													</div>
 												</div>
 											</div>
 											<div class="col-md-4">
 												<div class="card">
-													<a href="">	
-													<img src="imagens/vista_piscina.png" class="card-img-top" alt="">
+													<a href="imagens/galeria/img6.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img6.png" class="card-img-top" alt="">
 													</a>
-													<div class="card-body">
-														<h5 class="card-title">Teste</h5>
-														<p class="card-text">
-															Lorem ipsum sit amet
-														</p>
-													</div>
 												</div>
 											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="row">
+											<div class="col-md-4">
+												<div class="card">
+													<a href="imagens/galeria/img7.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img7.png" class="card-img-top" alt="">
+													</a>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="card">
+													<a href="imagens/galeria/img8.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img8.png" class="card-img-top" alt="">
+													</a>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="card">
+													<a href="imagens/galeria/img9.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img9.png" class="card-img-top" alt="">
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="row">
+											<div class="col-md-4">
+												<div class="card">
+													<a href="imagens/galeria/img10.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img10.png" class="card-img-top" alt="">
+													</a>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="card">
+													<a href="imagens/galeria/img11.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img11.png" class="card-img-top" alt="">
+													</a>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="card">
+													<a href="imagens/galeria/img12.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img12.png" class="card-img-top" alt="">
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="row">
+											<div class="col-md-4">
+												<div class="card">
+													<a href="imagens/galeria/img13.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img13.png" class="card-img-top" alt="">
+													</a>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="card">
+													<a href="imagens/galeria/img14.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img14.png" class="card-img-top" alt="">
+													</a>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="card">
+													<a href="imagens/galeria/img15.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img15.png" class="card-img-top" alt="">
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="row">
+											<div class="col-md-4">
+												<div class="card">
+													<a href="imagens/galeria/img16.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img16.png" class="card-img-top" alt="">
+													</a>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="card">
+													<a href="imagens/galeria/img17.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img17.png" class="card-img-top" alt="">
+													</a>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="card">
+													<a href="imagens/galeria/img18.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img18.png" class="card-img-top" alt="">
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="row">
+											<div class="col-md-4">
+												<div class="card">
+													<a href="imagens/galeria/img19.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img19.png" class="card-img-top" alt="">
+													</a>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="card">
+													<a href="imagens/galeria/img20.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img20.png" class="card-img-top" alt="">
+													</a>
+												</div>
+											</div>
+											<!-- <div class="col-md-4">
+												<div class="card">
+													<a href="imagens/galeria/img6.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img6.png" class="card-img-top" alt="">
+													</a>
+												</div>
+											</div> -->
 										</div>
 									</div>
 
@@ -284,15 +379,9 @@
 										<div class="row">
 											<div class="col-12">
 												<div class="card">
-													<a href="">	
-													<img src="imagens/vista_piscina.png" class="card-img-top" alt="">
+													<a href="imagens/galeria/img1.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img1.png" class="card-img-top" alt="">
 													</a>
-													<div class="card-body">
-														<h5 class="card-title">Teste</h5>
-														<p class="card-text">
-															Lorem ipsum sit amet
-														</p>
-													</div>
 												</div>
 											</div>
 										</div>
@@ -301,15 +390,9 @@
 										<div class="row">
 											<div class="col-12">
 												<div class="card">
-													<a href="">	
-													<img src="imagens/vista_piscina.png" class="card-img-top" alt="">
+													<a href="imagens/galeria/img2.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img2.png" class="card-img-top" alt="">
 													</a>
-													<div class="card-body">
-														<h5 class="card-title">Teste</h5>
-														<p class="card-text">
-															Lorem ipsum sit amet
-														</p>
-													</div>
 												</div>
 											</div>
 										</div>
@@ -318,15 +401,9 @@
 										<div class="row">
 											<div class="col-12">
 												<div class="card">
-													<a href="">	
-													<img src="imagens/vista_piscina.png" class="card-img-top" alt="">
+													<a href="imagens/galeria/img3.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img3.png" class="card-img-top" alt="">
 													</a>
-													<div class="card-body">
-														<h5 class="card-title">Teste</h5>
-														<p class="card-text">
-															Lorem ipsum sit amet
-														</p>
-													</div>
 												</div>
 											</div>
 										</div>
@@ -337,15 +414,9 @@
 										<div class="row">
 											<div class="col-12">
 												<div class="card">
-													<a href="">	
-													<img src="imagens/vista_piscina.png" class="card-img-top" alt="">
+													<a href="imagens/galeria/img4.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img4.png" class="card-img-top" alt="">
 													</a>
-													<div class="card-body">
-														<h5 class="card-title">Teste</h5>
-														<p class="card-text">
-															Lorem ipsum sit amet
-														</p>
-													</div>
 												</div>
 											</div>
 										</div>
@@ -354,15 +425,9 @@
 										<div class="row">
 											<div class="col-12">
 												<div class="card">
-													<a href="">	
-													<img src="imagens/vista_piscina.png" class="card-img-top" alt="">
+													<a href="imagens/galeria/img5.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img5.png" class="card-img-top" alt="">
 													</a>
-													<div class="card-body">
-														<h5 class="card-title">Teste</h5>
-														<p class="card-text">
-															Lorem ipsum sit amet
-														</p>
-													</div>
 												</div>
 											</div>
 										</div>
@@ -371,15 +436,163 @@
 										<div class="row">
 											<div class="col-12">
 												<div class="card">
-													<a href="">	
-													<img src="imagens/vista_piscina.png" class="card-img-top" alt="">
+													<a href="imagens/galeria/img6.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img6.png" class="card-img-top" alt="">
 													</a>
-													<div class="card-body">
-														<h5 class="card-title">Teste</h5>
-														<p class="card-text">
-															Lorem ipsum sit amet
-														</p>
-													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="row">
+											<div class="col-12">
+												<div class="card">
+													<a href="imagens/galeria/img7.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img7.png" class="card-img-top" alt="">
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="row">
+											<div class="col-12">
+												<div class="card">
+													<a href="imagens/galeria/img8.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img8.png" class="card-img-top" alt="">
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="row">
+											<div class="col-12">
+												<div class="card">
+													<a href="imagens/galeria/img9.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img9.png" class="card-img-top" alt="">
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="row">
+											<div class="col-12">
+												<div class="card">
+													<a href="imagens/galeria/img10.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img10.png" class="card-img-top" alt="">
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="row">
+											<div class="col-12">
+												<div class="card">
+													<a href="imagens/galeria/img11.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img11.png" class="card-img-top" alt="">
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="row">
+											<div class="col-12">
+												<div class="card">
+													<a href="imagens/galeria/img12.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img12.png" class="card-img-top" alt="">
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="row">
+											<div class="col-12">
+												<div class="card">
+													<a href="imagens/galeria/img13.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img13.png" class="card-img-top" alt="">
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="row">
+											<div class="col-12">
+												<div class="card">
+													<a href="imagens/galeria/img14.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img14.png" class="card-img-top" alt="">
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="row">
+											<div class="col-12">
+												<div class="card">
+													<a href="imagens/galeria/img15.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img15.png" class="card-img-top" alt="">
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="row">
+											<div class="col-12">
+												<div class="card">
+													<a href="imagens/galeria/img16.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img16.png" class="card-img-top" alt="">
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="row">
+											<div class="col-12">
+												<div class="card">
+													<a href="imagens/galeria/img17.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img17.png" class="card-img-top" alt="">
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="row">
+											<div class="col-12">
+												<div class="card">
+													<a href="imagens/galeria/img18.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img18.png" class="card-img-top" alt="">
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="row">
+											<div class="col-12">
+												<div class="card">
+													<a href="imagens/galeria/img19.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img19.png" class="card-img-top" alt="">
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="row">
+											<div class="col-12">
+												<div class="card">
+													<a href="imagens/galeria/img20.png" data-lightbox="portfolio">	
+														<img src="imagens/galeria/miniaturas/min_img20.png" class="card-img-top" alt="">
+													</a>
 												</div>
 											</div>
 										</div>
