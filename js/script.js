@@ -77,7 +77,13 @@ function criaVisualizador() {
 
      //função para muadar a imagem:
      function mudaImagem() {
-      imagem.src = miniaturas[dataIndex].getAttribute('data-src');
+      imagem.classList.add('fade-out');
+
+      setTimeout(() => {
+        imagem.src = miniaturas[dataIndex].getAttribute('data-src');
+        imagem.classList.remove('fade-out');
+        
+      }, 500);
      }
 
      
