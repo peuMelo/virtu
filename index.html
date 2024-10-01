@@ -8,14 +8,18 @@
 		<!---->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta http-equiv="Content-Security-Policy" content="
-		  default-src 'self';
-		  script-src 'self' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com;
-		  style-src 'self' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com 'unsafe-inline';
-		  font-src 'self' https://cdnjs.cloudflare.com;
-		  img-src 'self' data:;
-		  frame-src 'self' https://www.google.com https://maps.googleapis.com;
-		  connect-src 'self' https://maps.googleapis.com;
+			default-src 'self';
+			script-src 'self' https://cdn.jsdelivr.net 'unsafe-inline';
+			style-src 'self' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com 'unsafe-inline';
+			font-src 'self' https://cdnjs.cloudflare.com;
+			img-src 'self' data:;
+			frame-src 'self' https://www.google.com https://maps.googleapis.com;
+			connect-src 'self' https://maps.googleapis.com;
+			worker-src 'self' blob:;
 		">
+
+
+
 
 		<link rel="stylesheet" type="text/css" href="css/estilo.css">
 
